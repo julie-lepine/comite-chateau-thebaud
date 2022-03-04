@@ -1,0 +1,77 @@
+body {
+    background-color: rgba(128, 128, 128, 0.1)!important;
+}
+
+/**** COMMUNS ****/
+header .navbar, footer {
+    background-color:#e3ebe7;
+}
+
+/**** FOOTER ****/
+/** BLOC DIV PLAN DU SITE **/
+.plan, .logoFooter {
+    margin: 7% 0;
+}
+
+.bottomBar {
+    background: linear-gradient(to bottom, #09A459 0%, #D3D94D 100%), no-repeat top, white;
+    background-size: 100% 5px;
+    padding: 2px 10px;
+}
+
+footer .plan p {
+    font-variant: small-caps;
+}
+
+footer .plan p:hover, footer .copyright a:hover, .register:hover  {
+    font-weight: bold;
+}
+
+/** BOUTON RETOUR EN HAUT DE PAGE **/
+.up {
+    width: 8%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+/**** RESPONSIVE ****/
+/** MEDIA QUERIES HEADER **/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .navbar-nav {
+        gap: 0;
+    }
+
+    .navbar-brand {
+        margin-right: 0!important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 5%;
+        gap: 45%;
+    }
+    
+    header form {
+        gap: 5%;
+        margin-right: 2%;
+    }
+}
+
+/** MEDIA QUERIES FOOTER **/
+@media screen and (min-width: 992px) {
+    .logoFooter, .plan {
+        margin: 3%!important;
+    }
+
+    .plan {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .up {
+        width: 5%;
+    }
+}
+

@@ -1,0 +1,173 @@
+/**** GENERAL ****/
+main {
+    background-image: url(/assets/img/index/Chateau_thebaud.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+/**** PARTIE WELCOME ****/
+.mainHeader {
+    height: auto;
+}
+
+.mainHeader, .textActivities {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeText {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5% 5% 5% 5%!important;
+    width: 90%;
+}
+
+.mainHeader, .welcomeText h2 {
+    padding-bottom: 10%;
+}
+
+/**** PARTIE CENTRALE ****/
+/* PARTIE ENGAGEMENT */
+.engagementContent {
+    background-image: url(/assets/img/index/fond.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.engagementContent p, .engagementContent h3 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.engagementContent p {
+    padding: 7%;
+}
+
+.engagementContent h3 {
+    padding: 3%;
+}
+
+/* IMG */
+.mainHeader .divImg {
+    background: url(/assets/img/events/city_tour/wineyard_rounded.png);
+    width: 50vh;
+    height: 50vw;
+}
+
+.mainHeader .divImg:hover {
+    background: url(/assets/img/events/city_tour/wineyard_rounded2.png);
+}
+
+.mainHeader .divImg, .mainHeader .divImg:hover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5% 0;
+}
+
+/* CAROUSEL */
+.mainCarousel {
+    width: 90%!important;
+    margin: auto!important;
+}
+
+/**** PARTIE ACTIVITES ****/
+.mainActivities {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.textItalic {
+    font-style: italic;
+}
+
+.textLittleCapital {
+    font-variant: small-caps;
+}
+
+/******** RESPONSIVE ********/
+/* TABLETTES */
+@media screen and (min-width: 768px) {
+    .welcomeText {
+        margin: 2% 0;
+    }
+    
+    .welcomeText h1, .welcomeText p, .welcomeText h2, .textActivities h3 {
+        font-size: 1.5em;
+    }
+
+    .mainHeader .divImg {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .textActivities .textItalic {
+        display: none;
+    }
+
+    .mainActivities {
+        width: 70vw!important;
+    }
+
+    .grapes {
+        width: 40px;
+        margin: 1%;
+    }
+
+    .engagementAnnounce {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .engagementContent {
+        margin: auto;
+    }
+
+    .centerSection {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+/* PC PORTABLE */
+@media screen and (min-width: 1024px) {
+    .mainHeader {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .engagementAnnounce {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .engagementContent {
+        margin-bottom: 5%;
+    }
+}
+
+/* PC DE BUREAU */
+@media screen and (min-width: 1440px) {
+    .welcomeText h1, .welcomeText p, .welcomeText h2, .textActivities h3 {
+        font-size: 2em;
+    }
+
+    .mainCarousel .carousel-item h4 {
+        font-size: 1.5em;
+    }
+
+    main article div .grapes {
+        width: 40px;
+    }
+}

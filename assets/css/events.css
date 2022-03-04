@@ -1,0 +1,113 @@
+/**** GENERAL ****/
+section { height: auto; }
+
+/**** DISPOSITION GRID ****/
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one" "two" "three" "four";
+    gap: 10px;
+}
+
+.event1 { grid-area: one;}
+.event2 { grid-area: two;}
+.event3 { grid-area: three;}
+.event4 { grid-area: four;}
+
+.event1, .event2, .event3, .event4 {
+    padding: 3%;
+    border: 1px solid black;
+}
+
+/**** TITRE DE LA PAGE ****/
+.mainTitles { 
+    margin: 0 0 10% 0;
+}
+
+.mainTitles h1 {
+    font-size: 2em;
+    background-color: #d2d94d6b;
+    padding: 10%;
+}
+
+.grapes {
+    margin-bottom: 8%;
+}
+
+/**** CHAQUE EVENT ****/
+/* TITRE */
+.events h3, .txtSmallcaps { 
+    font-variant: small-caps;
+    margin-top: 4%;
+}
+
+.eventTitle p { 
+    margin: 0;
+}
+
+/* IMG */
+.events .eventContent1, .events .eventContent2, .events .eventContent3, .events .eventContent4 {
+    height: auto;
+    margin: 0 2% 8% 2%;
+}
+
+/**** NAVIGATION ****/
+.navNav {
+    margin: 10%;
+}
+
+/******* RESPONSIVE *******/
+/* TABLETTES */
+@media screen and (min-width: 768px) {
+    .test { 
+        display: flex;
+        margin-top: 5%!important;
+    }
+
+    .eventDetails { 
+        width: 70%;
+    }
+
+    .navNav { 
+        margin: 7%;
+    }
+}
+
+/* PC PORTABLE */
+@media screen and (min-width: 1024px) {
+    .mainTitles h1 {
+        padding: 5%;
+    }
+    
+    .gridContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one two" "three four";
+    }
+
+    .test { 
+        display: inline-block;
+    }
+
+    .eventDetails { 
+        margin: auto;
+        width: 90%;
+    }
+}
+
+/* PC DE BUREAU */
+@media screen and (min-width: 1440px) {
+    .test { 
+        display: flex;
+        align-items: center;
+    }
+    
+    .eventDetails { 
+        width: 75%;
+    }
+    
+    .navNav { 
+        margin: 3%;
+    }
+}

@@ -1,0 +1,82 @@
+/**** FORM ****/
+/* FORM HEADER */
+.formHeaderTitle {
+    background-color: #d2d94d6b;
+    padding: 10%;
+}
+
+.formHeaderContent {
+    font-size: 0.8em;
+}
+
+/* FORM CONTENT */
+main article {
+    background: url(/assets/img/engagement/background.bmp);
+    padding-bottom: 2%;
+}
+
+main form {
+    margin: 0 5% 10% 5%!important;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.4)!important;
+}
+
+main form .centerLabel, form div p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+/**** RESPONSIVE ****/
+/* TABLETTES */
+@media screen and (min-width: 768px) {
+    main form {
+        margin: 0 5%;
+        border: 1px dotted #0AA459;
+    }
+    
+    .formHeaderContent {
+        font-size: 1em;
+        padding: 0 4%;
+    } 
+
+    .formHeaderTitle {
+        padding: 5%;
+        font-size: 1.5em!important;
+    }
+
+    main form .widthInput {
+        width: 80%!important;
+        margin: auto;
+    }
+
+    .centerInput {
+        text-align : center;
+    }
+
+    .centerInput .w-25 {
+        margin: none;
+    }
+}
+
+/* PC PORTABLE */
+@media screen and (min-width: 1024px) {
+    main form {
+        margin: 0 20%!important;
+    }
+
+    main form .widthInput {
+        width: 60%!important;
+    }
+
+    .formHeaderTitle {
+        font-size: 2em!important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main form {
+        margin: 0 30%!important;
+        margin-bottom: 3%!important;
+    }
+}
