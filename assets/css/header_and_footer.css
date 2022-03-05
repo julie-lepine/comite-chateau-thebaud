@@ -7,6 +7,11 @@ header .navbar, footer {
     background-color:#e3ebe7;
 }
 
+.breadcrumb ol li a {
+    text-decoration: none;
+    color: black;
+}
+
 /**** FOOTER ****/
 /** BLOC DIV PLAN DU SITE **/
 .plan, .logoFooter {
@@ -25,6 +30,11 @@ footer .plan p {
 
 footer .plan p:hover, footer .copyright a:hover, .register:hover  {
     font-weight: bold;
+}
+
+.plan a, .mb-3 a, .copyright p a {
+    text-decoration: none;
+    color: black;
 }
 
 /** BOUTON RETOUR EN HAUT DE PAGE **/

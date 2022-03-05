@@ -1,6 +1,6 @@
 /**** GENERAL ****/
 main {
-    background-image: url(/assets/img/index/Chateau_thebaud.jpg);
+    background-image: url(../img/index/Chateau_thebaud.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -32,7 +32,7 @@ main {
 /**** PARTIE CENTRALE ****/
 /* PARTIE ENGAGEMENT */
 .engagementContent {
-    background-image: url(/assets/img/index/fond.png);
+    background-image: url(../img/index/fond.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,10 +43,6 @@ main {
     margin: 0 10%;
 }
 
-.engagementContent p, .engagementContent h3 {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
 .engagementContent p {
     padding: 7%;
 }
@@ -55,15 +51,20 @@ main {
     padding: 3%;
 }
 
+.engagementAnnounce a {
+    text-decoration: none;
+    color: black;
+}
+
 /* IMG */
 .mainHeader .divImg {
-    background: url(/assets/img/events/city_tour/wineyard_rounded.png);
+    background: url(../img/events/city_tour/wineyard_rounded.png);
     width: 50vh;
     height: 50vw;
 }
 
 .mainHeader .divImg:hover {
-    background: url(/assets/img/events/city_tour/wineyard_rounded2.png);
+    background: url(../img/events/city_tour/wineyard_rounded2.png);
 }
 
 .mainHeader .divImg, .mainHeader .divImg:hover {
